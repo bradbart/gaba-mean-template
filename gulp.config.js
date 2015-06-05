@@ -11,8 +11,8 @@ module.exports = function() {
             '!' + appRoot + 'scripts/**/*.spec.js',
         ],
         styles: {
-            css: appRoot + 'styles/style.css',
-            compiledDest: 'style.css', 
+            css: appRoot + 'styles/app.css',
+            compiledDest: 'app.css',
             directory: appRoot + 'styles/',
             less: appRoot + 'styles/style.less'
         }, 
@@ -24,4 +24,4 @@ module.exports = function() {
     }; 
     
     return config; 
-}; 
+};

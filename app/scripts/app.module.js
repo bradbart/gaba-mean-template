@@ -1,4 +1,10 @@
 (function () {
     'use strict';
-    angular.module('testApp', []);  
+
+    // TODO: provide name for the app
+    angular.module('', []).config(AppSetup);
+
+    function AppSetup() {
+        // TODO: add constants for module
+    }
 }());

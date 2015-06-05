@@ -1,8 +1,6 @@
 {
   "name": "testing-stuff",
   "version": "1.0.0",
-  "description": "Testing how github works",
-  "main": "test.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
