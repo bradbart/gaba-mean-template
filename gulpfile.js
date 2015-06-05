@@ -1,7 +1,5 @@
 var gulp = require('gulp'); 
 var gulp$ = require('gulp-load-plugins')({lazy: true});
-var util = require('gulp-util'); 
-var watch = require('gulp-watch'); 
 var config = require('./gulp.config.js')(); 
 
 gulp.task('compile-less', function() {
@@ -36,12 +34,12 @@ gulp.task('watch-less', function() {
 
 gulp.task('watch-new-js', function() {
     logInfo('Watch for new and removed JS files and run "wire-dep"'); 
-    watch(config.js, { events: ['add', 'unlink']}, function () {
+    gulp$.watch(config.js, { events: ['add', 'unlink']}, function () {
          gulp.start('wire-dep');
    });  
 }); 
 
 /* Utilities for tasks */
 function logInfo(msg) {
-    util.log(util.colors.blue(msg));  
+    gulp$.util.log(gulp$.util.colors.blue(msg));  
 }
