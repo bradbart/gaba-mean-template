@@ -2,8 +2,6 @@ var gulp = require('gulp');
 var gulp$ = require('gulp-load-plugins')({lazy: true});
 var config = require('./gulp.config.js')(); 
 
-console.log('Adding something dumb to test');
-
 gulp.task('compile-less', function() {
     logInfo('Compile LESS to CSS'); 
     return gulp.src(config.styles.less)
