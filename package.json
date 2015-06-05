@@ -1,0 +1,30 @@
+{
+  "name": "testing-stuff",
+  "version": "1.0.0",
+  "description": "Testing how github works",
+  "main": "test.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-inject": "^1.2.0",
+    "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-watch": "^4.2.4",
+    "wiredep": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradbart/testing-stuff.git"
+  },
+  "author": "Brad Bart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradbart/testing-stuff/issues"
+  },
+  "homepage": "https://github.com/bradbart/testing-stuff"
+}
