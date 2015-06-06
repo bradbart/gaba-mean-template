@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
+    "gaba-gulp": "^1.1.2",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-inject": "^1.2.0",
