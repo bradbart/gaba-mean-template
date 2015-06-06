@@ -13,7 +13,7 @@ module.exports = function() {
     }
 
     function logVerbose(msg) {
-//        gulp$.util.log(msg);
+        gulp$.util.log(msg);
     }
 
     function getConfig() {
