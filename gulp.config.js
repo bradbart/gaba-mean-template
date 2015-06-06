@@ -14,7 +14,7 @@ module.exports = function() {
             css: appRoot + 'styles/app.css',
             compiledDest: 'app.css',
             directory: appRoot + 'styles/',
-            less: appRoot + 'styles/style.less'
+            less: appRoot + 'styles/app.less'
         }, 
         
         /* Options for wiredep */
