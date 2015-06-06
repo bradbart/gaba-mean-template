@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
-    "gaba-gulp": "^2.0.1",
+    "gaba-gulp-tasks": "0.0.0",
     "gulp": "^3.9.0"
   },
   "scripts": {
