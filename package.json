@@ -1,5 +1,5 @@
 {
-  "name": "testing-stuff",
+  "name": "gaba-mean-template",
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bradbart/testing-stuff.git"
+    "url": "https://github.com/bradbart/gaba-mean-template.git"
   },
   "author": "Brad Bart",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bradbart/testing-stuff/issues"
+    "url": "https://github.com/bradbart/gaba-mean-template/issues"
   },
-  "homepage": "https://github.com/bradbart/testing-stuff"
+  "homepage": "https://github.com/bradbart/gaba-mean-template"
 }
