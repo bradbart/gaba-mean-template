@@ -1,2 +1,2 @@
-require('gaba-gulp').allTasks();
+require('gaba-gulp')().allTasks();
 
