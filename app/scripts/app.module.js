@@ -1,6 +1,5 @@
 (function () {
     'use strict';
-
     // TODO: provide name for the app
     angular.module('', []).config(AppSetup);
 

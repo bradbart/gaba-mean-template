@@ -2,6 +2,6 @@
     "directory": "bower_components/",
     "interactive": false, 
     "scripts": {
-        "postinstall": "gulp wire-dep"
+        "postinstall": "gulp compile:index"
     }
 }

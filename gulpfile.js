@@ -1,2 +1,2 @@
-require('gaba-gulp-tasks')({karma: {configFile: __dirname + '/karma.conf.js'}}).allTasks();
+require('gaba-gulp-tasks')({karma: {configPath: __dirname + '/karma.conf.js'}}).allTasks();
 

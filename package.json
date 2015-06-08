@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
-    "gaba-gulp-tasks": "0.2.0",
-    "gulp": "^3.9.0"
+    "gaba-gulp-tasks": "^0.2.2",
+    "gulp": "^3.9.0",
+    "wiredep": "^2.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
