@@ -17,10 +17,9 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [].concat(
       bowerFiles,
-      'app/scripts/**/*.module.js',
-      'app/scripts/**/*.js'
+      'app/**/*.module.js',
+      'app/**/*.js'
     ),
-
 
     // list of files to exclude
     exclude: [
