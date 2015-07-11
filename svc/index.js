@@ -5,18 +5,23 @@ var app = express();
 var env = process.env.NODE_ENV || 'development'; 
 var config = require('./config/' + env + '.js'); 
 
-/* Define static contents and root of angular application */ 
-var publicRoot = __dirname + '/' + config.publicRoot;
-app.use(express.static(publicRoot));
-app.get('/*', function(request, response) {
-    response.sendFile(config.indexPath, {root: publicRoot});
-});
+serveStaticContent(); 
+var server = startServer(); 
 
-/* Start the server */
-var server = app.listen(config.port || 3000, function() {
-    var host = server.address().address; 
-    host = host === '::' ? 'localhost' : host; 
-    var port = server.address().port; 
-    console.log('Server started on http://%s:%s in %s mode', 
-        host, port, env); 
-}); 
+function serveStaticContent() {
+    var publicRoot = __dirname + '/' + config.publicRoot;
+    app.use(express.static(publicRoot));
+    app.get('/*', function(request, response) {
+        response.sendFile(config.indexPath, {root: publicRoot});
+    });
+}
+
+function startServer() {
+     return app.listen(config.port || 3000, function() {
+        var host = server.address().address; 
+        host = host === '::' ? 'localhost' : host; 
+        var port = server.address().port; 
+        console.log('Server started on http://%s:%s in %s mode', 
+            host, port, env); 
+     }); 
+}
