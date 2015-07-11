@@ -2,11 +2,9 @@
   "name": "gaba-mean-template",
   "dependencies": {
     "angular": "~1.4.0",
-    "bootstrap": "~3.3.4",
+    "bootstrap": "~3.2.0",
     "angular-animate": "~1.4.0",
     "angular-ui-router": "~0.2.15",
-    "bower": "*",
-    "install": "~1.0.4",
     "angular-bootstrap": "~0.13.0"
   },
   "devDependencies": {
