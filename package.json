@@ -1,7 +1,9 @@
 {
   "name": "gaba-mean-template",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.13.1"
+  },
   "devDependencies": {
     "gaba-gulp-tasks": "^0.2.2",
     "gulp": "^3.9.0",
