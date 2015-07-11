@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html ng-app="">
 <head>
+    <!--build:css lib.css-->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
+    <!--endbuild-->   
     
+    <!--build:css app.css-->
     <!-- inject:css -->
     <link rel="stylesheet" href="/app/app.css">
     <!-- endinject  -->
+    <!--endbuild-->   
 </head>
 <body>
    <div class="container">
        <div ui-view></div>
    </div>
 
+    <!--build:js lib.js-->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
@@ -22,10 +26,13 @@
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
+    <!--endbuild-->   
     
+    <!--build:js app.js-->
     <!-- inject:js -->
     <script src="/app/app.module.js"></script>
     <script src="/app/app.routes.js"></script>
-    <!-- endinject -->    
+    <!-- endinject --> 
+    <!--endbuild-->   
 </body>
 </html>
