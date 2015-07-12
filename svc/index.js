@@ -11,6 +11,9 @@ var server = startServer();
 function serveStaticContent() {
     var publicRoot = __dirname + '/' + config.publicRoot;
     app.use(express.static(publicRoot));
+    if(config.debug) {
+        app.use(express.static(publicRoot + '/app'));
+    }
     app.get('/*', function(request, response) {
         response.sendFile(config.indexPath, {root: publicRoot});
     });

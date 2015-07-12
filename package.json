@@ -5,7 +5,7 @@
     "express": "^4.13.1"
   },
   "devDependencies": {
-    "gaba-gulp-tasks": "^0.4.0",
+    "gaba-gulp-tasks": "^0.5.1",
     "gulp": "^3.9.0",
     "wiredep": "^2.2.2"
   },
