@@ -5,26 +5,8 @@ var app = express();
 var env = process.env.NODE_ENV || 'development'; 
 var config = require('./config/' + env + '.js'); 
 
-serveStaticContent(); 
-var server = startServer(); 
-
-function serveStaticContent() {
-    var publicRoot = __dirname + '/' + config.publicRoot;
-    app.use(express.static(publicRoot));
-    if(config.debug) {
-        app.use(express.static(publicRoot + '/app'));
-    }
-    app.get('/*', function(request, response) {
-        response.sendFile(config.indexPath, {root: publicRoot});
-    });
-}
-
-function startServer() {
-     return app.listen(config.port || 3000, function() {
-        var host = server.address().address; 
-        host = host === '::' ? 'localhost' : host; 
-        var port = server.address().port; 
-        console.log('Server started on http://%s:%s in %s mode', 
-            host, port, env); 
-     }); 
-}
+/* Final set up for the server. All middleware should be defined before this statement. */
+app.use(require('./static-content.middleware')(config)); 
+app.listen(config.port || 3000, function() {
+    console.log('Server started on port %s in %s mode', config.port || 3000, env); 
+}); 

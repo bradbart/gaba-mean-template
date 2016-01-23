@@ -1,6 +1,6 @@
 module.exports = {
+    baseDirectory: __dirname + '/../../',
     debug: false, 
     port: 80, 
-    publicRoot: '../public', 
-    indexPath: 'index.html'
+    publicRoots: ['public/']
 }; 
